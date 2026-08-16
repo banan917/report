@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC — Меню</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">KFC</div>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="menu.html">Меню</a>
+        <a href="promotions.html">Акции</a>
+        <a href="about.html">О нас</a>
+    </nav>
+
+    <button class="order-btn" onclick="showCart()">🛒 <span id="cart-count">0</span></button>
+</header>
+
+<main class="page">
+
+    <section class="page-title">
+        <p class="subtitle">НАШЕ МЕНЮ</p>
+        <h1>Выбирай свой вкус</h1>
+        <p>Любимые блюда KFC для любого настроения.</p>
+    </section>
+
+    <section class="menu-grid">
+
+        <div class="menu-item">
+            <div class="food-image">🍗</div>
+            <h2>Крылышки</h2>
+            <p>Хрустящие куриные крылышки.</p>
+            <strong>35 000 сум</strong>
+            <button onclick="addToCart('Крылышки', 35000)">Добавить</button>
+        </div>
+
+        <div class="menu-item">
+            <div class="food-image">🍔</div>
+            <h2>Чикен Бургер</h2>
+            <p>Сочная курочка, булочка и фирменный соус.</p>
+            <strong>32 000 сум</strong>
+            <button onclick="addToCart('Чикен Бургер', 32000)">Добавить</button>
+        </div>
+
+        <div class="menu-item">
+            <div class="food-image">🍟</div>
+            <h2>Картофель фри</h2>
+            <p>Золотистый картофель с хрустящей корочкой.</p>
+            <strong>18 000 сум</strong>
+            <button onclick="addToCart('Картофель фри', 18000)">Добавить</button>
+        </div>
+
+        <div class="menu-item">
+            <div class="food-image">🥤</div>
+            <h2>Газированный напиток</h2>
+            <p>Освежающий напиток на выбор.</p>
+            <strong>12 000 сум</strong>
+            <button onclick="addToCart('Напиток', 12000)">Добавить</button>
+        </div>
+
+        <div class="menu-item">
+            <div class="food-image">🍗</div>
+            <h2>Баскет</h2>
+            <p>Большая порция курочки для компании.</p>
+            <strong>75 000 сум</strong>
+            <button onclick="addToCart('Баскет', 75000)">Добавить</button>
+        </div>
+
+        <div class="menu-item">
+            <div class="food-image">🍦</div>
+            <h2>Мороженое</h2>
+            <p>Нежный десерт после основного блюда.</p>
+            <strong>15 000 сум</strong>
+            <button onclick="addToCart('Мороженое', 15000)">Добавить</button>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <div class="logo">KFC</div>
+    <p>© 2026 KFC. Рекламный учебный проект.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
